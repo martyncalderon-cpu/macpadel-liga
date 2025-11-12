@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC PADEL | Inicio</title>
+<meta name="description" content="Inicio MAC PADEL — jornadas y patrocinadores" />
+<link rel="stylesheet" href="styles.css" />
+</head><body>
+
+<header>
+  <div class="wrap container">
+    <div class="brand"><div class="logo">MP</div><strong>MAC PADEL</strong></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="jornadas.html">Jornadas</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<section class="card">
+  <h1>MAC PADEL · Liga y Torneos</h1>
+  <p class="muted">Publica aquí jornadas, resultados y anuncia a tus patrocinadores. Esta versión es ligera, ideal para GitHub Pages.</p>
+  <div class="grid-2">
+    <div>
+      <h2>En curso</h2>
+      <ul>
+        <li><a href="jornadas.html">Calendario y resultados de la liga</a></li>
+        <li><a href="patrocinadores.html">Patrocinadores oficiales</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Próximos</h2>
+      <p>Próximo torneo: <strong>Americano Nocturno</strong> — 07 DIC</p>
+      <a class="btn" href="contacto.html">Inscripciones / Contacto</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> MAC PADEL — Hecho para jugar más 🎾</div>
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+      var y=document.getElementById('year'); if(y){ y.textContent=new Date().getFullYear(); }
+    });
+  </script>
+</footer>
+
+</body></html>

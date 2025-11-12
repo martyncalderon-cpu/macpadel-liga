@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC PADEL | Contacto</title>
+<meta name="description" content="Contacto MAC PADEL" />
+<link rel="stylesheet" href="styles.css" />
+</head><body>
+
+<header>
+  <div class="wrap container">
+    <div class="brand"><div class="logo">MP</div><strong>MAC PADEL</strong></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="jornadas.html">Jornadas</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<h1>Contacto</h1>
+<p class="muted">Dudas rápidas por WhatsApp o correo.</p>
+<p>
+  <a class="btn" href="#" onclick="openWhats()">WhatsApp</a>
+  <a class="btn secondary" href="mailto:martyncalderon@gmail.com">martyncalderon@gmail.com</a>
+</p>
+<script>
+  function openWhats(){
+    const msg = encodeURIComponent('Hola, quiero información de las jornadas/patrocinios.');
+    window.open('https://wa.me/526251158582?text='+msg, '_blank');
+  }
+</script>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> MAC PADEL — Hecho para jugar más 🎾</div>
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+      var y=document.getElementById('year'); if(y){ y.textContent=new Date().getFullYear(); }
+    });
+  </script>
+</footer>
+
+</body></html>

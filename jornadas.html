@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC PADEL | Jornadas</title>
+<meta name="description" content="Jornadas y resultados de la liga MAC PADEL" />
+<link rel="stylesheet" href="styles.css" />
+</head><body>
+
+<header>
+  <div class="wrap container">
+    <div class="brand"><div class="logo">MP</div><strong>MAC PADEL</strong></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="jornadas.html">Jornadas</a>
+      <a href="patrocinadores.html">Patrocinadores</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<h1>Jornadas y Resultados</h1>
+<p class="muted">Copia y pega tus enfrentamientos y marcadores. Puedes duplicar estas tablas para cada jornada.</p>
+
+<section class="card">
+  <h2>Jornada 5 (ejemplo)</h2>
+  <table>
+    <thead><tr><th>Pareja A</th><th>Pareja B</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td>Alex / Casco</td><td>Diego / Pollo</td><td>6-4, 6-3</td></tr>
+      <tr><td>Fofo / Ricky V.</td><td>CID / Josean</td><td>6-7, 7-6, 10-8</td></tr>
+      <tr><td>Gallo / Kike</td><td>Nan / Nono</td><td>7-5, 3-6, 10-6</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>Jornada 6 (plantilla vacía)</h2>
+  <table>
+    <thead><tr><th>Pareja A</th><th>Pareja B</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+</section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> MAC PADEL — Hecho para jugar más 🎾</div>
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+      var y=document.getElementById('year'); if(y){ y.textContent=new Date().getFullYear(); }
+    });
+  </script>
+</footer>
+
+</body></html>
